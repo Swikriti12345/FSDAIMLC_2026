@@ -104,4 +104,3 @@ const serverdata=await fetch('https://fakestoreapi.com/products');
 }
 button.addEventListener('click',display);
 
-//this is the end of the code
