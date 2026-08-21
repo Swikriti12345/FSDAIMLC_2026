@@ -1,54 +1,118 @@
+let root = document.getElementById("root");
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-</head>
-<body>
-    <div>
-    <H1 style="text-align: center; background-color: orange;">Swikriti Singh<H1>
-    </div>
-    <div style="text-align: center;">
-    <img src="WhatsApp Image 2025-09-01 at 14.11.45_6f48a503.jpg" height="px" width="180px" alt="">
-    </div>
-    <div>
-    <h2 style="text-align: center; background-color: skyblue;">ABOUT-</h2>
-    <P>Currently I am working in <B>PETALS NGO</B>  as an content writer.</P>
-    </div>
-    <div>
-        <h2>EDUCATION</h2>
-       <table border="1px" style width="150px;">
-        <tr>
-            <th>Class 10</th>
-            <th>Class 12</th>
-            <th>B.Tech</th>
-        </tr>
-    
-        <tr>
-            <th>9 CGPA</th>
-            <th>9.5 CGPA</th>
-            <th>Pursuing</th>
+root.innerHTML = `
+    <div style="
+        width: 80%;
+        margin: 30px auto;
+        padding: 30px;
+        border: 2px solid black;
+        font-family: Arial, sans-serif;
+    ">
+
+        <h1 style="
+            text-align: center;
+            background-color: orange;
+            padding: 10px;
+        ">
+            SWIKRITI SINGH
+        </h1>
+
+        <p style="text-align: center;">
+            B.Tech CSE (Artificial Intelligence & Machine Learning) Student
+        </p>
+
+        <hr>
+
+        <h2 style="background-color: skyblue; padding: 8px;">
+            ABOUT ME
+        </h2>
+
+        <p>
+            I am a B.Tech Computer Science student specializing in Artificial
+            Intelligence and Machine Learning. I am passionate about AI, Machine
+            Learning, Data Science, and learning new technologies.
+        </p>
+
+        <h2 style="background-color: skyblue; padding: 8px;">
+            EDUCATION
+        </h2>
+
+        <table border="1" cellpadding="10" cellspacing="0"
+            style="width: 100%; border-collapse: collapse;">
+
+            <tr>
+                <th>Qualification</th>
+                <th>Result</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Class 10</td>
+                <td>9 CGPA</td>
+                <td>Completed</td>
+            </tr>
+
+            <tr>
+                <td>Class 12</td>
+                <td>9.5 CGPA</td>
+                <td>Completed</td>
+            </tr>
+
+            <tr>
+                <td>B.Tech CSE (AI & ML)</td>
+                <td>-</td>
+                <td>Pursuing</td>
+            </tr>
         </table>
-    </div>
-    <hr>
 
-    <div>
-        <h2>HOBBIES</h2>
-        <table border="1px" style width="150px;">
-        <tr>
-            <th>National Player</th>
-        </tr>
-    
-        <tr>
-            <th>basketball / Netball</th>
-        </table>
+        <h2 style="background-color: skyblue; padding: 8px;">
+            SKILLS
+        </h2>
+
+        <ul>
+            <li>C++</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Machine Learning</li>
+            <li>Data Science</li>
+            <li>Git and GitHub</li>
+        </ul>
+
+        <h2 style="background-color: skyblue; padding: 8px;">
+            EXPERIENCE
+        </h2>
+
+        <p>
+            <b>Content Writer — PETALS NGO</b>
+        </p>
+
+        <p>
+            Working as a content writer and contributing to
+            content-related activities.
+        </p>
+
+        <h2 style="background-color: skyblue; padding: 8px;">
+            HOBBIES
+        </h2>
+
+        <ul>
+            <li>Basketball</li>
+            <li>Netball</li>
+            <li>Drawing</li>
+            <li>Dancing</li>
+        </ul>
+
+        <h2 style="background-color: skyblue; padding: 8px;">
+            ACHIEVEMENTS
+        </h2>
+
+        <ul>
+            <li>National Level Basketball / Netball Player</li>
+            <li>Participated in Hackathons</li>
+            <li>Interested in Artificial Intelligence and Machine Learning</li>
+        </ul>
 
     </div>
-    <div>
-        <h2 style="text-align: center; background-color: skyblue;">Contact me-</h2>
-        <a href="https://www.instagram.com/swik.riti07?igsh=MXRrNzZmOGJoczV2Yw==">Instagram</a>
-    </div>
-</body>
-</html>
+`;
