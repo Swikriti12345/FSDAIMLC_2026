@@ -1,118 +1,118 @@
-let root = document.getElementById("root");
+const div = document.getElementById('root');
+const bt = document.getElementById('btn');
 
-root.innerHTML = `
-    <div style="
-        width: 80%;
-        margin: 30px auto;
-        padding: 30px;
-        border: 2px solid black;
-        font-family: Arial, sans-serif;
-    ">
+const h1 = document.createElement('h1');
+h1.innerText = "Data Is Loading...";
 
-        <h1 style="
-            text-align: center;
-            background-color: orange;
-            padding: 10px;
-        ">
-            SWIKRITI SINGH
-        </h1>
+let obj = {
+    Name: "SWIKRITI SINGH",
+    Roll: 203,
+    Branch: "CSE - AIML",
+    Clg: "ABES Engineering College",
 
-        <p style="text-align: center;">
-            B.Tech CSE (Artificial Intelligence & Machine Learning) Student
-        </p>
+    Email: "swikritisan07@gmail.com",
+    Phone: "9625471762",
+    Location: "Ghaziabad, Uttar Pradesh",
 
-        <hr>
+    TechStack: "Java, DSA, HTML, CSS, JavaScript",
 
-        <h2 style="background-color: skyblue; padding: 8px;">
-            ABOUT ME
-        </h2>
+    Skills: "Java, Data Structures, Algorithms, Web Development",
 
-        <p>
-            I am a B.Tech Computer Science student specializing in Artificial
-            Intelligence and Machine Learning. I am passionate about AI, Machine
-            Learning, Data Science, and learning new technologies.
-        </p>
+    Education: "B.Tech in Computer Science & Engineering (AI & ML)",
 
-        <h2 style="background-color: skyblue; padding: 8px;">
-            EDUCATION
-        </h2>
+    Projects: "Resume Builder, Portfolio, ToDo List, AI Interview Agent",
 
-        <table border="1" cellpadding="10" cellspacing="0"
-            style="width: 100%; border-collapse: collapse;">
+    LinkedIn: "linkedin.com/in/swikriti-singh-05530233b",
+    GitHub: "github.com/Swikriti12345"
+};
 
-            <tr>
-                <th>Qualification</th>
-                <th>Result</th>
-                <th>Status</th>
-            </tr>
+function display() {
 
-            <tr>
-                <td>Class 10</td>
-                <td>9 CGPA</td>
-                <td>Completed</td>
-            </tr>
+    div.innerHTML = "";
+    div.appendChild(h1);
 
-            <tr>
-                <td>Class 12</td>
-                <td>9.5 CGPA</td>
-                <td>Completed</td>
-            </tr>
+    setTimeout(() => {
 
-            <tr>
-                <td>B.Tech CSE (AI & ML)</td>
-                <td>-</td>
-                <td>Pursuing</td>
-            </tr>
-        </table>
+        let table = `
+            <table>
 
-        <h2 style="background-color: skyblue; padding: 8px;">
-            SKILLS
-        </h2>
+                <tr>
+                    <th colspan="2" class="resume-title">
+                        Resume
+                    </th>
+                </tr>
 
-        <ul>
-            <li>C++</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Machine Learning</li>
-            <li>Data Science</li>
-            <li>Git and GitHub</li>
-        </ul>
+                <tr>
+                    <th>Name</th>
+                    <td>${obj.Name}</td>
+                </tr>
 
-        <h2 style="background-color: skyblue; padding: 8px;">
-            EXPERIENCE
-        </h2>
+                <tr>
+                    <th>Roll No.</th>
+                    <td>${obj.Roll}</td>
+                </tr>
 
-        <p>
-            <b>Content Writer — PETALS NGO</b>
-        </p>
+                <tr>
+                    <th>Branch</th>
+                    <td>${obj.Branch}</td>
+                </tr>
 
-        <p>
-            Working as a content writer and contributing to
-            content-related activities.
-        </p>
+                <tr>
+                    <th>College</th>
+                    <td>${obj.Clg}</td>
+                </tr>
 
-        <h2 style="background-color: skyblue; padding: 8px;">
-            HOBBIES
-        </h2>
+                <tr>
+                    <th>Email</th>
+                    <td>${obj.Email}</td>
+                </tr>
 
-        <ul>
-            <li>Basketball</li>
-            <li>Netball</li>
-            <li>Drawing</li>
-            <li>Dancing</li>
-        </ul>
+                <tr>
+                    <th>Phone</th>
+                    <td>${obj.Phone}</td>
+                </tr>
 
-        <h2 style="background-color: skyblue; padding: 8px;">
-            ACHIEVEMENTS
-        </h2>
+                <tr>
+                    <th>Location</th>
+                    <td>${obj.Location}</td>
+                </tr>
 
-        <ul>
-            <li>National Level Basketball / Netball Player</li>
-            <li>Participated in Hackathons</li>
-            <li>Interested in Artificial Intelligence and Machine Learning</li>
-        </ul>
+                <tr>
+                    <th>Tech Stack</th>
+                    <td>${obj.TechStack}</td>
+                </tr>
 
-    </div>
-`;
+                <tr>
+                    <th>Skills</th>
+                    <td>${obj.Skills}</td>
+                </tr>
+
+                <tr>
+                    <th>Education</th>
+                    <td>${obj.Education}</td>
+                </tr>
+
+                <tr>
+                    <th>Projects</th>
+                    <td>${obj.Projects}</td>
+                </tr>
+
+                <tr>
+                    <th>LinkedIn</th>
+                    <td>${obj.LinkedIn}</td>
+                </tr>
+
+                <tr>
+                    <th>GitHub</th>
+                    <td>${obj.GitHub}</td>
+                </tr>
+
+            </table>
+        `;
+
+        div.innerHTML = table;
+
+    }, 1000);
+}
+
+bt.addEventListener('click', display);
